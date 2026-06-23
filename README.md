@@ -17,6 +17,7 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 | 11 | 300 g | 28 cm | Westin | Sandy Andy Jig (kompletny) | **Blue Pearl** | 102,39 zł | Amazon · ~01.06.2026 |
 | 12 | ~400 g | 27 cm | Westin | Crazy Daisy *spare body* | **Glow Gadus** (kod GG) | 118,99 zł | Allegro / troc_szczecin · 04.06.2026 |
 | 13 | 400 g | 27 cm | Westin | Crazy Daisy Jig (kompletny: head + 2 gumy) | **HeadLight** | 118,99 zł | Allegro / pan_wedkarz · 04.06.2026 |
+| 14 | 300 g | 25 cm | Savage Gear | 4D Herring Big Shad *(dodane ręcznie — brak w mailach)* | (do wyboru, np. Herring / Glow Haddock / Coalfish) | — | — |
 
 ## Uwagi
 - **140 g i 175 g Sandeel V2**: pełna nazwa koloru była w tytule oferty Allegro, której Spark nie zachowuje w treści maila (Allegro blokuje też fetch po HTTP 403). Mam tylko ID ofert.
@@ -42,6 +43,7 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 | 11 | [`09_Westin_SandyAndyJig_300g_28cm_BluePearl.jpg`](images/09_Westin_SandyAndyJig_300g_28cm_BluePearl.jpg) | Westin Sandy Andy Jig 300 g / 28 cm — **Blue Pearl** |
 | 12 | [`10_Westin_CrazyDaisy_colorchart.jpg`](images/10_Westin_CrazyDaisy_colorchart.jpg) | Westin Crazy Daisy — oficjalna tabela kolorów z kodami (zawiera **GG = Glow Gadus** dla spare body 400 g) |
 | 13 | [`12_Westin_CrazyDaisyJig_400g_27cm_HeadLight.jpg`](images/12_Westin_CrazyDaisyJig_400g_27cm_HeadLight.jpg) | Westin Crazy Daisy Jig 400 g / 27 cm — **HeadLight** |
+| 14 | [`14_SG_4DHerringBigShad_25cm_300g.jpg`](images/14_SG_4DHerringBigShad_25cm_300g.jpg) | SG **4D Herring Big Shad** 300 g / 25 cm — dodane ręcznie (poza zakupami z maila) |
 
 ## Źródła
 - Lokalny cache Spark Desktop (FTS + messageBodyParsedData)
