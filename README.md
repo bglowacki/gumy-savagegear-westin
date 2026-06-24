@@ -19,6 +19,17 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 | 13 | 400 g | 27 cm | Westin | Crazy Daisy Jig (kompletny: head + 2 gumy) | **HeadLight** | 118,99 zł | Allegro / pan_wedkarz · 04.06.2026 |
 | 14 | 300 g | 25 cm | Savage Gear | 4D Herring Big Shad *(dodane ręcznie — brak w mailach)* | **Red Fish** (karmazyn) | — | — |
 
+## Tagi technologiczne
+
+| Tag | Co znaczy | Pozycje z listy |
+|---|---|---|
+| 🟣 **UV** | UV-reactive paint deklarowany przez producenta. Świeci dzięki światłu UV ze słońca — działa tylko gdy nad wodą jasno. UV-A wchodzi w wodę Sørøya do ~100 m. | **1, 5, 6, 7, 8, 14** (cała linia SG Sandeel V2 BG + 4D Herring Big Shad) |
+| 🟢 **GLOW** | Fosforyzujący (phosphor). Naładuj latarką przed wpuszczeniem, świeci sam w ciemności. Dla mętnej wody, nocy, głębi >100 m. | **10, 12, 13** (Westin Glow Gadus + Headlight) |
+| 🟢½ **GLOW (brzuch)** | Fosforyzuje tylko fragment lury. | **9** (Westin Robo Cod — luminescencyjny brzuch) |
+| — (brak) | Naturalny kolor bez UV/GLOW deklarowanego. | **2, 3, 4, 11** (Westin Sandy Andy Blue Pearl/MOG/TA, 300 g BP) |
+
+**Ważne:** Westin Sandy Andy / Crazy Daisy producent NIE deklaruje UV. „Glow Gadus" i „Headlight" to fosfor (świecą po naładowaniu), nie UV. SG odwrotnie — cała linia Sandeel V2 BG i 4D Herring ma UV-reactive finish (sprawdzone na savage-gear.com, gerlinger.de, pilker-discount.de).
+
 ## Uwagi
 - **140 g i 175 g Sandeel V2**: pełna nazwa koloru była w tytule oferty Allegro, której Spark nie zachowuje w treści maila (Allegro blokuje też fetch po HTTP 403). Mam tylko ID ofert.
 - **Sandy Andy 23 cm = ~150 g** (Westin oficjalny rozmiar zamiennika dla tego wymiaru) — kody kolorów BP / MOG / TA odpowiadają nazwom Blue Pearl / Motoroil Gadus / Tobis Ammo z oficjalnego katalogu (Hook-Up).
