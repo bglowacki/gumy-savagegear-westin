@@ -19,6 +19,16 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 | 13 | 400 g | 27 cm | Westin | Crazy Daisy Jig (kompletny: head + 2 gumy) | **HeadLight** | 118,99 zł | Allegro / pan_wedkarz · 04.06.2026 |
 | 14 | 300 g | 25 cm | Savage Gear | 4D Herring Big Shad *(dodane ręcznie — brak w mailach)* | **Red Fish** (karmazyn) | — | — |
 
+## Strony (HTML)
+
+| Strona | Co zawiera |
+|---|---|
+| [`sciaga_soroya.html`](sciaga_soroya.html) | **Indeks** wszystkich 14 gum (self-contained, embedded foty). Menu na górze linkuje do podstron wg nasłonecznienia. |
+| [`slonce-mocne.html`](slonce-mocne.html) | ☀️ **Mocne słońce** — jasny dzień, klarowna woda: UV-reactive (cała linia SG) + naturalne perłowe/błyszczące kolory (Blue Pearl, Tobis Ammo, Green Silver). 9 pozycji. |
+| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — pochmurno, świt/zmierzch, mętna woda, głębia: GLOW (fosfor) + ciemne kontrastowe kolory (Motoroil Gadus, Puffin). 6 pozycji. |
+
+Podział wynika z tagów: **UV** świeci dzięki słońcu (jasny dzień), **GLOW** świeci po naładowaniu latarką (gdy słońca brak).
+
 ## Tagi technologiczne
 
 | Tag | Co znaczy | Pozycje z listy |
