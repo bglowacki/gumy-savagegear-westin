@@ -34,11 +34,11 @@ Podział wynika z tagów: **UV-reactive** świeci dzięki promieniom UV — najm
 | Tag | Co znaczy | Pozycje z listy |
 |---|---|---|
 | 🟣 **UV** | UV-reactive paint deklarowany przez producenta. Świeci dzięki promieniom UV — najmocniej w słońcu, ale UV przechodzi przez chmury (75–90%), więc działa też przy zachmurzeniu (słabiej). UV-A sięga najgłębiej ze wszystkich barw: w najczystszej toni kilkadziesiąt metrów, w wodzie przybrzeżnej znacznie mniej. Gaśnie w nocy i poniżej zasięgu UV. | **1, 5, 6, 7, 8, 14** (cała linia SG Sandeel V2 BG + 4D Herring Big Shad) |
-| 🟢 **GLOW** | Fosforyzujący (phosphor). Naładuj latarką przed wpuszczeniem, świeci sam w ciemności. Dla mętnej wody, nocy, głębi >100 m. | **10, 12, 13** (Westin Glow Gadus + Headlight) |
-| 🟢½ **GLOW (brzuch)** | Fosforyzuje tylko fragment lury. | **9** (Westin Robo Cod — luminescencyjny brzuch) |
+| 🟢 **GLOW** | Fosforyzujący (phosphor) korpus. Naładuj latarką przed wpuszczeniem, świeci sam w ciemności. Dla mętnej wody, nocy, głębi >100 m. | **10, 12** (Westin Glow Gadus — Sandy Andy 300 g + Crazy Daisy 400 g) |
+| 🟢½ **GLOW (część)** | Świeci/jaskrawi się tylko fragment lury, reszta korpusu naturalna. | **9** (Robo Cod — luminescencyjny brzuch), **13** (Headlight — jaskrawa „reflektorowa" głowa, korpus naturalny srebrny) |
 | — (brak) | Naturalny kolor bez UV/GLOW deklarowanego. | **2, 3, 4, 11** (Westin Sandy Andy Blue Pearl/MOG/TA, 300 g BP) |
 
-**Ważne:** Westin Sandy Andy / Crazy Daisy producent NIE deklaruje UV. „Glow Gadus" i „Headlight" to fosfor (świecą po naładowaniu), nie UV. SG odwrotnie — cała linia Sandeel V2 BG i 4D Herring ma UV-reactive finish (sprawdzone na savage-gear.com, gerlinger.de, pilker-discount.de).
+**Ważne:** Westin Sandy Andy / Crazy Daisy producent NIE deklaruje UV. „Glow Gadus" to fosforyzujący korpus (świeci po naładowaniu), a „Headlight" ma jaskrawą/świecącą głowę przy naturalnym, srebrnym korpusie (świeci sama głowa — potwierdza zdjęcie referencyjne) — w obu wypadkach to nie UV. SG odwrotnie — cała linia Sandeel V2 BG i 4D Herring ma UV-reactive finish (sprawdzone na savage-gear.com, gerlinger.de, pilker-discount.de).
 
 ## Uwagi
 - **140 g i 175 g Sandeel V2**: pełna nazwa koloru była w tytule oferty Allegro, której Spark nie zachowuje w treści maila (Allegro blokuje też fetch po HTTP 403). Mam tylko ID ofert.
