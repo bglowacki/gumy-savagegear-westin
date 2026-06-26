@@ -23,9 +23,21 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 
 | Strona | Co zawiera |
 |---|---|
-| [`sciaga_soroya.html`](sciaga_soroya.html) | **Indeks** wszystkich 14 gum (self-contained, embedded foty). Menu na górze linkuje do podstron wg nasłonecznienia. |
+| [`sciaga_soroya.html`](sciaga_soroya.html) | **Indeks** wszystkich 14 gum (kolejność wagowa). Menu na górze linkuje do podstron wg nasłonecznienia. |
 | [`slonce-mocne.html`](slonce-mocne.html) | ☀️ **Mocne słońce** — jasny dzień, klarowna woda: UV-reactive (cała linia SG) + naturalne perłowe/błyszczące kolory (Blue Pearl, Tobis Ammo, Green Silver). 9 pozycji. |
-| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — świt/zmierzch, noc, mętna woda, głębia poniżej zasięgu UV: GLOW (fosfor) + ciemne kontrastowe kolory (Motoroil Gadus, Puffin). 6 pozycji. (Sam pochmurny dzień UV jeszcze nie wyłącza.) |
+| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — dwie sekcje: **(1) pochmurny dzień** = te same gumy UV linii SG (działają pod chmurami, słabiej); **(2) mrok/noc/głębia/mętna woda** = GLOW (fosfor) + ciemne kontrastowe (Motoroil, Puffin). 11 pozycji (5 UV + 6 GLOW/ciemne). |
+
+### Komponenty (jedno źródło prawdy)
+
+Karty gum są **reuzywalne** między stronami — dane gumy żyją w jednym miejscu, strony tylko je składają:
+
+| Plik | Rola |
+|---|---|
+| [`assets/lures.js`](assets/lures.js) | **Jedno źródło prawdy** — `window.LURES`: dla każdej gumy stałe pola (tytuł, zdjęcie, głębokość) + domyślny opis (badge/headline/kolor/body = widok indeksu). Edytujesz raz, zmiana propaguje wszędzie. |
+| [`assets/cards.js`](assets/cards.js) | Komponent: `renderGrid('#kontener', [...])` renderuje karty z `LURES`; pola opisowe można nadpisać per strona. |
+| [`assets/cards.css`](assets/cards.css) | Wspólne style kart i znaczników (UV / GLOW / GLOW-partial / CIEMNY / NATURALNY). |
+
+Ta sama guma na kilku stronach (np. SG UV na liście słonecznej **i** w sekcji „pochmurno") = jeden wpis w `lures.js`, różne ujęcie opisu na stronie. Zmiana zdjęcia/wagi/nazwy = jedna edycja.
 
 Podział wynika z tagów: **UV-reactive** świeci dzięki promieniom UV — najmocniej w słońcu, ale UV przechodzi też przez chmury (75–90%), więc działa i przy zachmurzeniu (słabiej); gaśnie dopiero nocą i poniżej zasięgu UV-A. **GLOW** świeci sam po naładowaniu światłem — wtedy, gdy UV już nie ma (noc, głębia, mętna woda). Podział na podstrony jest więc praktyczny (jasny dzień ↔ mrok/głębia), nie sztywny: gumy UV bywają skuteczne także pod chmurami.
 

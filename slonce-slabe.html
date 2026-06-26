@@ -1,119 +1,74 @@
 <!DOCTYPE html>
-<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>🌥️ Słabe słońce / mrok — dobór gum (Sørøya)</title><style>
-:root { color-scheme: light dark; }
-* { box-sizing: border-box; }
-body { font-family: -apple-system,BlinkMacSystemFont,system-ui,'Segoe UI',Helvetica,Arial,sans-serif;
-       margin:0; padding:14px; line-height:1.35; background:#f5f5f4; color:#1c1917; }
-.nav { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; }
-.nav a { font-size:13px; font-weight:600; text-decoration:none; padding:7px 12px; border-radius:999px;
-         background:#fff; border:1px solid #e7e5e4; color:#44403c; }
-.nav a.active { background:#475569; border-color:#334155; color:#f1f5f9; }
-h1 { font-size:20px; margin:0 0 6px; }
-h1 small { font-weight:400; opacity:.7; font-size:13px; }
-.lede { font-size:13px; opacity:.9; margin:0 0 14px; }
-.why { background:#f1f5f9; border:1px solid #cbd5e1; padding:10px 12px; border-radius:8px; font-size:12px; margin-bottom:18px; }
-.why b { display:block; margin-bottom:4px; font-size:13px; }
-.why ul { margin:4px 0 0 18px; padding:0; }
-.why li { margin:2px 0; }
-.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px; }
-.card { background:#fff; border:1px solid #e7e5e4; border-radius:10px; padding:10px; break-inside: avoid; }
-.card img { width:100%; height:160px; object-fit:contain; background:#fafaf9; border-radius:6px; border:1px solid #e7e5e4; }
-.card h2 { font-size:15px; margin:8px 0 2px; }
-.badges { margin:2px 0 6px; }
-.badge { display:inline-block; font-size:10px; font-weight:700; padding:2px 7px; border-radius:999px; letter-spacing:.04em; margin-right:4px; vertical-align: middle; }
-.badge.glow { background:#84cc16; color:#1a2e05; box-shadow:0 0 0 2px #ecfccb inset; }
-.badge.glow-partial { background:#ecfccb; color:#365314; border:1px solid #bef264; font-weight:600; }
-.badge.dark { background:#334155; color:#f1f5f9; }
-.headline { font-weight:600; color:#0c4a6e; margin:0 0 6px; font-size:13px; }
-.metric { font-size:12px; margin:3px 0; padding:5px 7px; border-radius:6px; line-height:1.3; }
-.metric span { display:inline-block; font-weight:700; font-size:9px; letter-spacing:.08em; padding:1px 6px; border-radius:999px; margin-right:6px; vertical-align: 1px; }
-.metric.depth { background:#eff6ff; border:1px solid #bfdbfe; color:#1e3a8a; }
-.metric.depth span { background:#1e3a8a; color:#fff; }
-.metric.color { background:#f1f5f9; border:1px solid #cbd5e1; color:#334155; }
-.metric.color span { background:#334155; color:#fff; }
-.body { font-size:12px; margin:6px 0 0; opacity:.9; }
-footer { font-size:11px; opacity:.7; margin-top:18px; text-align:center; }
-@media print { body { background:#fff; padding:8mm; font-size:11px; } .nav { display:none; } .grid { grid-template-columns:repeat(3,1fr); gap:6mm; } .card img { height:34mm; } .card { padding:6px; } }
-@media (prefers-color-scheme: dark) { body { background:#0c0a09; color:#fafaf9; } .nav a { background:#1c1917; border-color:#292524; color:#d6d3d1; } .nav a.active { background:#334155; border-color:#475569; color:#f1f5f9; } .card { background:#1c1917; border-color:#292524; } .card img { background:#0c0a09; border-color:#292524; } .why { background:#15212e; border-color:#334155; color:#cbd5e1; } .headline { color:#7dd3fc; } .metric.depth { background:#0c1e3a; border-color:#1e3a8a; color:#93c5fd; } .metric.color { background:#15212e; border-color:#334155; color:#cbd5e1; } }
-</style></head><body>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🌥️ Słabe słońce / mrok — dobór gum (Sørøya)</title>
+<link rel="stylesheet" href="assets/cards.css">
+<style>:root { --accent:#475569; --accent-fg:#f1f5f9; --why-bg:#f1f5f9; --why-border:#cbd5e1; }
+@media (prefers-color-scheme: dark){ :root{ --accent:#334155; --accent-fg:#f1f5f9; --why-bg:#15212e; --why-border:#334155; } }</style>
+</head><body>
 <nav class="nav">
   <a href="sciaga_soroya.html">📋 Indeks (14 gum)</a>
   <a href="slonce-mocne.html">☀️ Mocne słońce</a>
   <a href="slonce-slabe.html" class="active">🌥️ Słabe słońce / mrok</a>
 </nav>
 <h1>🌥️ Słabe słońce / mrok <small>pochmurno · świt/zmierzch · mętna woda · głębia</small></h1>
-<p class="lede">Wybór gum na <b>słabe światło i mrok</b>: świt i zmierzch, noc, mętna woda i głębia poniżej zasięgu UV-A (w najczystszej toni kilkadziesiąt metrów, w wodzie przybrzeżnej znacznie mniej). Dopiero tam UV-reactive paint <b>gaśnie</b> i pracują <b>fosforyzujące (GLOW)</b> korpusy oraz <b>ciemne, kontrastowe</b> kolory. Uwaga: sam <b>pochmurny dzień</b> UV jeszcze nie wyłącza — chmury przepuszczają 75–90% promieni UV, więc gumy UV z zakładki ☀️ dalej działają, tylko słabiej.</p>
+<p class="lede">Wybór gum gdy światła ubywa. Dwa różne przypadki, które łatwo pomylić: <b>(1) pochmurny dzień</b> — UV jeszcze działa (chmury przepuszczają 75–90% promieni UV), więc gumy UV/naturalne dalej łapią, tylko słabiej; <b>(2) noc, świt/zmierzch, mętna woda i głębia poniżej zasięgu UV-A</b> — dopiero tu UV <b>gaśnie</b> i pracują <b>fosforyzujące (GLOW)</b> korpusy oraz <b>ciemne, kontrastowe</b> kolory.</p>
 <div class="why">
   <b>Dlaczego te kolory bez słońca?</b>
   <ul>
+    <li><span class="badge uv">UV</span> — przy <b>zachmurzeniu</b> UV-reactive paint dalej działa (UV przechodzi przez chmury), tylko słabiej; gaśnie dopiero nocą i poniżej zasięgu UV-A. To te same gumy SG co w zakładce <b>☀️ Mocne słońce</b>.</li>
     <li><span class="badge glow">GLOW</span> — fosfor. Naładuj latarką/lampą UV przed wpuszczeniem; świeci sam, niezależnie od słońca. Idealny na noc, mętną wodę i głębię, gdzie UV gaśnie.</li>
     <li><span class="badge glow-partial">GLOW (brzuch/głowa)</span> — świeci/jaskrawi się tylko fragment lury: luminescencyjny brzuch (Robo Cod) albo jaskrawa „reflektorowa" głowa (Headlight), a reszta korpusu jest naturalna.</li>
     <li><span class="badge dark">CIEMNY</span> — ciemne, kontrastowe kolory (motoroil, czerń) dają wyraźną sylwetkę pod słabe światło, gdy jasne barwy się rozmywają.</li>
-    <li>UV-reactive i perłowe gumy → patrz zakładka <b>☀️ Mocne słońce</b>. UV pracuje najmocniej w słońcu, ale działa też przy zachmurzeniu (UV przechodzi przez chmury) — gaśnie dopiero nocą i poniżej zasięgu UV-A.</li>
   </ul>
 </div>
-<div class="grid">
 
-  <article class="card">
-    <img src="images/03_Westin_SandyAndyJig_150g_23cm_MotoroilGadus.jpg" alt="Westin Sandy Andy Jig · 150 g · 23 cm · Motoroil Gadus">
-    <h2>Westin Sandy Andy Jig · 150 g · 23 cm · Motoroil Gadus</h2>
-    <p class="badges"><span class="badge dark">CIEMNY</span></p>
-    <p class="headline">Kontrast gdy słońca brak</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 10–50 m · prąd słaby/średni</p>
-    <p class="metric color"><span>KOLOR</span> pochmurno · deszczowo · mętna/ciemna woda (ciemny kontrast)</p>
-    <p class="body">Ciemny motoroil — bursztynowo-brązowy korpus z gęstym brokatem i ciemnym grzbietem, kontrastowy w słabym świetle. Najlepszy dokładnie wtedy, gdy słońca nie ma. Płytko-średnio nad szelfem.</p>
-  </article>
+<h2 class="section-head">🌥️ Pochmurny dzień — UV i naturalne dalej grają <small>słabiej niż w słońcu, ale UV przechodzi przez chmury</small></h2>
+<p class="lede">To <b>te same gumy UV z linii SG</b> co na liście słonecznej. Pod chmurami działają nadal — gdy zejdziesz głębiej, do mętnej wody albo o zmierzchu, przerzuć się na sekcję GLOW poniżej.</p>
+<div class="grid" id="grid-pochmurno"></div>
 
-  <article class="card">
-    <img src="images/06_SG_SandeelV2-BG_275g_Puffin.jpg" alt="SG Sandeel V2 BG · 275 g · 27,5 cm · Puffin">
-    <h2>SG Sandeel V2 BG · 275 g · 27,5 cm · Puffin</h2>
-    <p class="badges"><span class="badge dark">CIEMNY</span></p>
-    <p class="headline">Czarno-biały kontrast przy zachmurzeniu</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 30–80 m · prąd mocny</p>
-    <p class="metric color"><span>KOLOR</span> jasno + pochmurno (czarno-biało-pomarańczowy kontrast)</p>
-    <p class="body">Maskonur działa też bez słońca: czarny grzbiet + biały brzuch dają czytelną sylwetkę pod pochmurnym niebem, niezależnie od UV. Killing zone 30–80 m. (Występuje też na liście słonecznej.)</p>
-  </article>
+<h2 class="section-head">🌑 Mrok · noc · głębia · mętna woda — GLOW + ciemny kontrast <small>tu UV już gaśnie</small></h2>
+<div class="grid" id="grid-mrok"></div>
 
-  <article class="card">
-    <img src="images/11_Westin_SandyAndyJig_300g_28cm_RoboCod.jpg" alt="Westin Sandy Andy Jig · 300 g · 28 cm · Robo Cod">
-    <h2>Westin Sandy Andy Jig · 300 g · 28 cm · Robo Cod</h2>
-    <p class="badges"><span class="badge glow-partial">GLOW (brzuch)</span></p>
-    <p class="headline">Imitacja dorsza, mieszane/słabe światło</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 30–60 m · prąd średni/mocny</p>
-    <p class="metric color"><span>KOLOR</span> pochmurno do mroku (luminescencyjny brzuch pomaga w głębi)</p>
-    <p class="body">Robo Cod = wzór dorsza. Fosforyzujący brzuch (NIE UV) widoczny dłużej, gdy światło słabnie. Oszukuje halibuta i lingę kontrolujące żerujące dorsze.</p>
-  </article>
-
-  <article class="card">
-    <img src="images/08_Westin_SandyAndyJig_300g_28cm_GlowGadus.jpg" alt="Westin Sandy Andy Jig · 300 g · 28 cm · Glow Gadus">
-    <h2>Westin Sandy Andy Jig · 300 g · 28 cm · Glow Gadus</h2>
-    <p class="badges"><span class="badge glow">GLOW</span></p>
-    <p class="headline">Niska widoczność / głęboko</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 30–80 m · prąd średni/mocny</p>
-    <p class="metric color"><span>KOLOR</span> świt/zmierzch · pochmurno · głęboko (GLOW — naładuj latarką)</p>
-    <p class="body">Świecący korpus (fosfor, nie UV). Stosuj tam, gdzie naturalne kolory już znikają (&gt;~30 m w pochmurnym świetle). Naładuj przed dropem.</p>
-  </article>
-
-  <article class="card">
-    <img src="images/10_Westin_CrazyDaisyJig_400g_27cm_GlowGadus.jpg" alt="Westin Crazy Daisy Jig · 400 g · 27 cm · Glow Gadus">
-    <h2>Westin Crazy Daisy Jig · 400 g · 27 cm · Glow Gadus</h2>
-    <p class="badges"><span class="badge glow">GLOW</span></p>
-    <p class="headline">Trofeowy halibut głęboko</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 50–120 m+ · prąd mocny</p>
-    <p class="metric color"><span>KOLOR</span> pochmurno · głęboko · świt/zmierzch (GLOW — naładuj latarką)</p>
-    <p class="body">Kompletny jig 400 g (paddle + curl + głowica). Glow Gadus = fosfor. Top-tier dla halibuta w głębokim, ciemnym słupie wody, gdzie słońce nie sięga.</p>
-  </article>
-
-  <article class="card">
-    <img src="images/12_Westin_CrazyDaisyJig_400g_27cm_HeadLight.jpg" alt="Westin Crazy Daisy Jig · 400 g · 27 cm · HeadLight">
-    <h2>Westin Crazy Daisy Jig · 400 g · 27 cm · HeadLight</h2>
-    <p class="badges"><span class="badge glow-partial">GLOW (głowa)</span></p>
-    <p class="headline">Trofeowy halibut, słaba widoczność</p>
-    <p class="metric depth"><span>GŁĘBOKOŚĆ</span> 50–120 m+ · prąd mocny</p>
-    <p class="metric color"><span>KOLOR</span> mętno · noc · głęboko (świeci głowa — korpus naturalny srebrny)</p>
-    <p class="body">Ciężka pałka. Jak sama nazwa: świeci/jaskrawi się <b>głowa</b> (żółto-chartreuse „reflektor") — punkt celowniczy w słabym świetle. Korpus to naturalny srebrny śledź i <b>nie świeci</b> (wg zdjęcia referencyjnego; producent nie potwierdza fosforu w korpusie). Wolno przy dnie, lekkimi twitchami w górę. Sørøya: ostatnie godziny pływu, prąd ~3 węzłów, brak słońca.</p>
-  </article>
-
-</div>
 <footer>Sørøya · gumy na słabe nasłonecznienie i mrok · indeks 14 pozycji w zakładce „Indeks". GLOW = fosfor (świeci po naładowaniu, nie UV); Westin Sandy Andy / Crazy Daisy producent nie deklaruje UV.</footer>
+
+<script src="assets/lures.js"></script>
+<script src="assets/cards.js"></script>
+<script>
+// Sekcja 1 — pochmurny dzień: te same gumy UV SG co na stronie słonecznej, ujęte pod zachmurzenie.
+renderGrid('#grid-pochmurno', [
+  { id:'sg-140', badges:[['uv','UV']], headline:'Pochmurny dzień, płytko',
+    kolor:'pochmurno · klarowna woda płytko — UV słabiej niż w słońcu, ale działa',
+    body:'UV-linia SG łapie też pod chmurami (UV przenika 75–90%). Trzymaj płytko, do ~30 m, gdzie światła wciąż dość. Powolny twitch + drop.' },
+  { id:'sg-175', badges:[['uv','UV']], headline:'Pochmurno, średnia głębokość',
+    kolor:'pochmurno · klarowna woda — UV przygasa z głębią, do ~50 m działa',
+    body:'Średnia waga na umiarkowany pływ. Przy zachmurzeniu UV nadal podbija sylwetkę na krawędzi 20–50 m; głębiej przerzuć się na GLOW.' },
+  { id:'sg-275-greensilver', badges:[['uv','UV']], headline:'Czarniak pod chmurami',
+    kolor:'pochmurno · klarowna woda (naturalny saithe + UV pomocniczo)',
+    body:'Naturalna miniatura czarniaka działa i bez ostrego słońca; UV dokłada sygnał, dopóki nie zejdziesz poniżej zasięgu UV-A.' },
+  { id:'sg-275-bluepearlsilver', badges:[['uv','UV']], headline:'Uniwersalny baitfish, pochmurno',
+    kolor:'pochmurno · klarowna głębsza woda (pearl + UV słabiej)',
+    body:'Niebieski baitfish gra także pod chmurami — pearl odbija rozproszone światło, UV podbija dopóki sięga. Na większej głębi ustąp GLOW-owi.' },
+  { id:'herring-redfish', badges:[['uv','UV']], headline:'Karmazyn na pochmurno — trzymaj płycej',
+    kolor:'pochmurno · skaliste dno — czerwień szybko gaśnie z głębią',
+    body:'Karmazyn (Sebastes) bierze też bez słońca, ale uwaga: czerwień znika z głębią najszybciej ze wszystkich barw — najlepiej w górnej części słupa albo gdy widać żerujące ryby. Głębiej w mroku → GLOW.' },
+]);
+
+// Sekcja 2 — mrok/noc/głębia/mętna woda: GLOW + ciemny kontrast (tu UV gaśnie).
+renderGrid('#grid-mrok', [
+  { id:'sa150-motoroil', badges:[['dark','CIEMNY']], headline:'Kontrast gdy słońca brak',
+    kolor:'pochmurno · deszczowo · mętna/ciemna woda (ciemny kontrast)',
+    body:'Ciemny motoroil — bursztynowo-brązowy korpus z gęstym brokatem i ciemnym grzbietem, kontrastowy w słabym świetle. Najlepszy dokładnie wtedy, gdy słońca nie ma. Płytko-średnio nad szelfem.' },
+  { id:'sg-275-puffin', badges:[['dark','CIEMNY']], headline:'Czarno-biały kontrast przy zachmurzeniu',
+    kolor:'jasno + pochmurno (czarno-biało-pomarańczowy kontrast)',
+    body:'Maskonur działa też bez słońca: czarny grzbiet + biały brzuch dają czytelną sylwetkę pod pochmurnym niebem, niezależnie od UV. Killing zone 30–80 m. (Występuje też w sekcji pochmurnej / na liście słonecznej jako UV.)' },
+  { id:'sa300-robocod', headline:'Imitacja dorsza, mieszane/słabe światło',
+    kolor:'pochmurno do mroku (luminescencyjny brzuch pomaga w głębi)',
+    body:'Robo Cod = wzór dorsza. Fosforyzujący brzuch (NIE UV) widoczny dłużej, gdy światło słabnie. Oszukuje halibuta i lingę kontrolujące żerujące dorsze.' },
+  { id:'sa300-glowgadus', headline:'Niska widoczność / głęboko',
+    kolor:'świt/zmierzch · pochmurno · głęboko (GLOW — naładuj latarką)',
+    body:'Świecący korpus (fosfor, nie UV). Stosuj tam, gdzie naturalne kolory już znikają (&gt;~30 m w pochmurnym świetle). Naładuj przed dropem.' },
+  { id:'cd400-glowgadus', body:'Kompletny jig 400 g (paddle + curl + głowica). Glow Gadus = fosfor. Top-tier dla halibuta w głębokim, ciemnym słupie wody, gdzie słońce nie sięga.' },
+  { id:'cd400-headlight' },
+]);
+</script>
 </body></html>
