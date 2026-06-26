@@ -1,0 +1,63 @@
+/* Wspólne style kart gum — używane przez indeks i podstrony pogodowe.
+   Motyw (kolor akcentu nawigacji) ustawia każda strona przez --accent. */
+:root {
+  color-scheme: light dark;
+  --accent: #f59e0b;          /* kolor aktywnej zakładki nav (nadpisywany per strona) */
+  --accent-fg: #451a03;
+  --bg: #f5f5f4; --fg: #1c1917;
+  --card-bg: #fff; --card-border: #e7e5e4; --img-bg: #fafaf9;
+  --why-bg: #f8fafc; --why-border: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: -apple-system,BlinkMacSystemFont,system-ui,'Segoe UI',Helvetica,Arial,sans-serif;
+       margin:0; padding:14px; line-height:1.35; background:var(--bg); color:var(--fg); }
+.nav { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; }
+.nav a { font-size:13px; font-weight:600; text-decoration:none; padding:7px 12px; border-radius:999px;
+         background:#fff; border:1px solid #e7e5e4; color:#44403c; }
+.nav a.active { background:var(--accent); border-color:var(--accent); color:var(--accent-fg); }
+h1 { font-size:20px; margin:0 0 6px; }
+h1 small { font-weight:400; opacity:.7; font-size:13px; }
+.lede { font-size:13px; opacity:.9; margin:0 0 14px; }
+.why { background:var(--why-bg); border:1px solid var(--why-border); padding:10px 12px; border-radius:8px; font-size:12px; margin-bottom:18px; }
+.why b { display:block; margin-bottom:4px; font-size:13px; }
+.why ul { margin:4px 0 0 18px; padding:0; }
+.why li { margin:2px 0; }
+.section-head { font-size:15px; margin:18px 0 8px; padding-bottom:4px; border-bottom:1px solid var(--card-border); }
+.section-head small { font-weight:400; opacity:.7; font-size:12px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px; }
+.card { background:var(--card-bg); border:1px solid var(--card-border); border-radius:10px; padding:10px; break-inside: avoid; }
+.card img { width:100%; height:160px; object-fit:contain; background:var(--img-bg); border-radius:6px; border:1px solid var(--card-border); }
+.card h2 { font-size:15px; margin:8px 0 2px; }
+.badges { margin:2px 0 6px; }
+.badge { display:inline-block; font-size:10px; font-weight:700; padding:2px 7px; border-radius:999px; letter-spacing:.04em; margin-right:4px; vertical-align: middle; }
+.badge.uv { background:#6d28d9; color:#fff; box-shadow:0 0 0 2px #ddd6fe inset; }
+.badge.natural { background:#fef3c7; color:#78350f; border:1px solid #fcd34d; }
+.badge.glow { background:#84cc16; color:#1a2e05; box-shadow:0 0 0 2px #ecfccb inset; }
+.badge.glow-partial { background:#ecfccb; color:#365314; border:1px solid #bef264; font-weight:600; }
+.badge.dark { background:#334155; color:#f1f5f9; }
+.headline { font-weight:600; color:#0c4a6e; margin:0 0 6px; font-size:13px; }
+.metric { font-size:12px; margin:3px 0; padding:5px 7px; border-radius:6px; line-height:1.3; }
+.metric span { display:inline-block; font-weight:700; font-size:9px; letter-spacing:.08em; padding:1px 6px; border-radius:999px; margin-right:6px; vertical-align: 1px; }
+.metric.depth { background:#eff6ff; border:1px solid #bfdbfe; color:#1e3a8a; }
+.metric.depth span { background:#1e3a8a; color:#fff; }
+.metric.color { background:#f1f5f9; border:1px solid #cbd5e1; color:#334155; }
+.metric.color span { background:#334155; color:#fff; }
+.body { font-size:12px; margin:6px 0 0; opacity:.9; }
+footer { font-size:11px; opacity:.7; margin-top:18px; text-align:center; }
+@media print {
+  body { background:#fff; padding:8mm; font-size:11px; }
+  .nav { display:none; }
+  .grid { grid-template-columns:repeat(3,1fr); gap:6mm; }
+  .card img { height:34mm; }
+  .card { padding:6px; }
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0c0a09; --fg:#fafaf9; --card-bg:#1c1917; --card-border:#292524; --img-bg:#0c0a09;
+          --why-bg:#15212e; --why-border:#334155; }
+  .nav a { background:#1c1917; border-color:#292524; color:#d6d3d1; }
+  .why { color:#cbd5e1; }
+  .headline { color:#7dd3fc; }
+  .metric.depth { background:#0c1e3a; border-color:#1e3a8a; color:#93c5fd; }
+  .metric.color { background:#15212e; border-color:#334155; color:#cbd5e1; }
+  .badge.natural { background:#3a2a08; color:#fcd34d; border-color:#78350f; }
+}
