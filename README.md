@@ -25,15 +25,15 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 |---|---|
 | [`sciaga_soroya.html`](sciaga_soroya.html) | **Indeks** wszystkich 14 gum (self-contained, embedded foty). Menu na górze linkuje do podstron wg nasłonecznienia. |
 | [`slonce-mocne.html`](slonce-mocne.html) | ☀️ **Mocne słońce** — jasny dzień, klarowna woda: UV-reactive (cała linia SG) + naturalne perłowe/błyszczące kolory (Blue Pearl, Tobis Ammo, Green Silver). 9 pozycji. |
-| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — pochmurno, świt/zmierzch, mętna woda, głębia: GLOW (fosfor) + ciemne kontrastowe kolory (Motoroil Gadus, Puffin). 6 pozycji. |
+| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — świt/zmierzch, noc, mętna woda, głębia poniżej zasięgu UV: GLOW (fosfor) + ciemne kontrastowe kolory (Motoroil Gadus, Puffin). 6 pozycji. (Sam pochmurny dzień UV jeszcze nie wyłącza.) |
 
-Podział wynika z tagów: **UV** świeci dzięki słońcu (jasny dzień), **GLOW** świeci po naładowaniu latarką (gdy słońca brak).
+Podział wynika z tagów: **UV-reactive** świeci dzięki promieniom UV — najmocniej w słońcu, ale UV przechodzi też przez chmury (75–90%), więc działa i przy zachmurzeniu (słabiej); gaśnie dopiero nocą i poniżej zasięgu UV-A. **GLOW** świeci sam po naładowaniu światłem — wtedy, gdy UV już nie ma (noc, głębia, mętna woda). Podział na podstrony jest więc praktyczny (jasny dzień ↔ mrok/głębia), nie sztywny: gumy UV bywają skuteczne także pod chmurami.
 
 ## Tagi technologiczne
 
 | Tag | Co znaczy | Pozycje z listy |
 |---|---|---|
-| 🟣 **UV** | UV-reactive paint deklarowany przez producenta. Świeci dzięki światłu UV ze słońca — działa tylko gdy nad wodą jasno. UV-A wchodzi w wodę Sørøya do ~100 m. | **1, 5, 6, 7, 8, 14** (cała linia SG Sandeel V2 BG + 4D Herring Big Shad) |
+| 🟣 **UV** | UV-reactive paint deklarowany przez producenta. Świeci dzięki promieniom UV — najmocniej w słońcu, ale UV przechodzi przez chmury (75–90%), więc działa też przy zachmurzeniu (słabiej). UV-A sięga najgłębiej ze wszystkich barw: w najczystszej toni kilkadziesiąt metrów, w wodzie przybrzeżnej znacznie mniej. Gaśnie w nocy i poniżej zasięgu UV. | **1, 5, 6, 7, 8, 14** (cała linia SG Sandeel V2 BG + 4D Herring Big Shad) |
 | 🟢 **GLOW** | Fosforyzujący (phosphor). Naładuj latarką przed wpuszczeniem, świeci sam w ciemności. Dla mętnej wody, nocy, głębi >100 m. | **10, 12, 13** (Westin Glow Gadus + Headlight) |
 | 🟢½ **GLOW (brzuch)** | Fosforyzuje tylko fragment lury. | **9** (Westin Robo Cod — luminescencyjny brzuch) |
 | — (brak) | Naturalny kolor bez UV/GLOW deklarowanego. | **2, 3, 4, 11** (Westin Sandy Andy Blue Pearl/MOG/TA, 300 g BP) |
