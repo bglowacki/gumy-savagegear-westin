@@ -25,7 +25,7 @@ Posortowane od najlżejszej do najcięższej. Źródła: Spark Desktop lokalny c
 |---|---|
 | [`sciaga_soroya.html`](sciaga_soroya.html) | **Indeks** wszystkich 14 gum (kolejność wagowa). Menu na górze linkuje do podstron wg nasłonecznienia. |
 | [`slonce-mocne.html`](slonce-mocne.html) | ☀️ **Mocne słońce** — jasny dzień, klarowna woda: UV-reactive (cała linia SG) + naturalne perłowe/błyszczące kolory (Blue Pearl, Tobis Ammo, Green Silver). 9 pozycji. |
-| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — dwie sekcje: **(1) pochmurny dzień** = te same gumy UV linii SG (działają pod chmurami, słabiej); **(2) mrok/noc/głębia/mętna woda** = GLOW (fosfor) + ciemne kontrastowe (Motoroil, Puffin). 11 pozycji (5 UV + 6 GLOW/ciemne). |
+| [`slonce-slabe.html`](slonce-slabe.html) | 🌥️ **Słabe słońce / mrok** — dwie sekcje: **(1) pochmurny dzień** = te same gumy UV linii SG (działają pod chmurami, słabiej); **(2) mrok/noc/głębia/mętna woda** = GLOW (fosfor) + fluo (Headlight) + ciemne kontrastowe (Motoroil, Puffin). 11 pozycji (5 UV + 6 GLOW/fluo/ciemne). |
 
 ### Komponenty (jedno źródło prawdy)
 
@@ -35,7 +35,7 @@ Karty gum są **reuzywalne** między stronami — dane gumy żyją w jednym miej
 |---|---|
 | [`assets/lures.js`](assets/lures.js) | **Jedno źródło prawdy** — `window.LURES`: dla każdej gumy stałe pola (tytuł, zdjęcie, głębokość) + domyślny opis (badge/headline/kolor/body = widok indeksu). Edytujesz raz, zmiana propaguje wszędzie. |
 | [`assets/cards.js`](assets/cards.js) | Komponent: `renderGrid('#kontener', [...])` renderuje karty z `LURES`; pola opisowe można nadpisać per strona. |
-| [`assets/cards.css`](assets/cards.css) | Wspólne style kart i znaczników (UV / GLOW / GLOW-partial / CIEMNY / NATURALNY). |
+| [`assets/cards.css`](assets/cards.css) | Wspólne style kart i znaczników (UV / GLOW / GLOW-partial / FLUO / CIEMNY / NATURALNY). |
 
 Ta sama guma na kilku stronach (np. SG UV na liście słonecznej **i** w sekcji „pochmurno") = jeden wpis w `lures.js`, różne ujęcie opisu na stronie. Zmiana zdjęcia/wagi/nazwy = jedna edycja.
 
@@ -47,10 +47,11 @@ Podział wynika z tagów: **UV-reactive** świeci dzięki promieniom UV — najm
 |---|---|---|
 | 🟣 **UV** | UV-reactive paint deklarowany przez producenta. Świeci dzięki promieniom UV — najmocniej w słońcu, ale UV przechodzi przez chmury (75–90%), więc działa też przy zachmurzeniu (słabiej). UV-A sięga najgłębiej ze wszystkich barw: w najczystszej toni kilkadziesiąt metrów, w wodzie przybrzeżnej znacznie mniej. Gaśnie w nocy i poniżej zasięgu UV. | **1, 5, 6, 7, 8, 14** (cała linia SG Sandeel V2 BG + 4D Herring Big Shad) |
 | 🟢 **GLOW** | Fosforyzujący (phosphor) korpus. Naładuj latarką przed wpuszczeniem, świeci sam w ciemności. Dla mętnej wody, nocy, głębi >100 m. | **10, 12** (Westin Glow Gadus — Sandy Andy 300 g + Crazy Daisy 400 g) |
-| 🟢½ **GLOW (część)** | Świeci/jaskrawi się tylko fragment lury, reszta korpusu naturalna. | **9** (Robo Cod — luminescencyjny brzuch), **13** (Headlight — jaskrawa „reflektorowa" głowa, korpus naturalny srebrny) |
+| 🟢½ **GLOW (brzuch)** | Fosfor tylko na fragmencie korpusu — świeci sam w ciemności, reszta naturalna. | **9** (Robo Cod — luminescencyjny brzuch) |
+| 🟡 **FLUO (głowa)** | Jaskrawa, fluorescencyjna głowa („reflektor"). To NIE glow/fosfor: świeci/kontrastuje póki dociera światło, w pełnej ciemności sama się nie żarzy. Korpus naturalny. | **13** (Headlight) |
 | — (brak) | Naturalny kolor bez UV/GLOW deklarowanego. | **2, 3, 4, 11** (Westin Sandy Andy Blue Pearl/MOG/TA, 300 g BP) |
 
-**Ważne:** Westin Sandy Andy / Crazy Daisy producent NIE deklaruje UV. „Glow Gadus" to fosforyzujący korpus (świeci po naładowaniu), a „Headlight" ma jaskrawą/świecącą głowę przy naturalnym, srebrnym korpusie (świeci sama głowa — potwierdza zdjęcie referencyjne) — w obu wypadkach to nie UV. SG odwrotnie — cała linia Sandeel V2 BG i 4D Herring ma UV-reactive finish (sprawdzone na savage-gear.com, gerlinger.de, pilker-discount.de).
+**Ważne:** Westin Sandy Andy / Crazy Daisy producent NIE deklaruje UV. „Glow Gadus" to fosforyzujący korpus (świeci sam po naładowaniu). „Headlight" to co innego — jaskrawa, **fluorescencyjna** żółto-chartreuse głowa przy naturalnym srebrnym korpusie: świeci/kontrastuje póki dociera światło, ale w pełnej ciemności sama się nie żarzy (to nie glow ani UV). Westin trzyma UV / FluoMax / Glow jako osobne kategorie kolorów, a glow w tej linii to wyłącznie „Glow Gadus" — stąd wniosek, że głowa Headlight jest fluo, nie fosforowa (zdjęcie referencyjne + nazewnictwo Brown/Blue/Green/Pink Headlight w całej gamie). SG odwrotnie — cała linia Sandeel V2 BG i 4D Herring ma UV-reactive finish (sprawdzone na savage-gear.com, gerlinger.de, pilker-discount.de).
 
 ## Uwagi
 - **140 g i 175 g Sandeel V2**: pełna nazwa koloru była w tytule oferty Allegro, której Spark nie zachowuje w treści maila (Allegro blokuje też fetch po HTTP 403). Mam tylko ID ofert.

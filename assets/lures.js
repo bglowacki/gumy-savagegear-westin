@@ -6,7 +6,7 @@
  *   (patrz konfiguracja w slonce-mocne.html / slonce-slabe.html).
  *
  * badge: 'uv' | 'natural' | 'glow' | 'dark' (etykieta domyślna)
- *        albo ['glow-partial','GLOW (głowa)'] dla etykiety własnej.
+ *        albo ['glow-partial','GLOW (brzuch)'] / ['fluo','FLUO (głowa)'] dla etykiety własnej.
  */
 window.LURES = {
   'sg-140': {
@@ -130,10 +130,10 @@ window.LURES = {
     title: 'Westin Crazy Daisy Jig · 400 g · 27 cm · HeadLight',
     img: 'images/12_Westin_CrazyDaisyJig_400g_27cm_HeadLight.jpg',
     depth: '50–120 m+ · prąd mocny',
-    badges: [['glow-partial', 'GLOW (głowa)']],
-    headline: 'Trofeowy halibut, słaba widoczność',
-    kolor: 'mętno · noc · głęboko (świeci głowa — korpus naturalny srebrny)',
-    body: 'Ciężka pałka. Jak sama nazwa: świeci/jaskrawi się głowa (żółto-chartreuse „reflektor") — punkt celowniczy w słabym świetle. Korpus to naturalny srebrny śledź i nie świeci (wg zdjęcia referencyjnego). Wolno przy dnie, lekkimi twitchami w górę. Sørøya: ostatnie godziny pływu, prąd ~3 węzłów.'
+    badges: [['fluo', 'FLUO (głowa)']],
+    headline: 'Trofeowy halibut, słabe światło',
+    kolor: 'słabe światło · stained · głębia z resztką światła (jaskrawa głowa — korpus naturalny srebrny)',
+    body: 'Ciężka pałka. Jak sama nazwa: jaskrawa, fluorescencyjna żółto-chartreuse głowa („reflektor") — kontrast i punkt celowniczy, póki dociera jeszcze trochę światła/UV. To NIE glow/fosfor: w pełnej ciemności głowa sama się nie żarzy (glow w tej linii to osobny kolor „Glow Gadus"). Korpus to naturalny srebrny śledź. Wolno przy dnie, lekkimi twitchami w górę. Sørøya: ostatnie godziny pływu, prąd ~3 węzłów.'
   }
 };
 

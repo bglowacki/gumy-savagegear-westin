@@ -23,7 +23,7 @@
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
-  // badge: 'uv' (etykieta domyślna) albo ['glow-partial','GLOW (głowa)'] (etykieta własna)
+  // badge: 'uv' (etykieta domyślna) albo ['fluo','FLUO (głowa)'] (etykieta własna)
   function badgesHTML(spec) {
     if (!spec || !spec.length) return '';
     return spec.map(function (b) {
